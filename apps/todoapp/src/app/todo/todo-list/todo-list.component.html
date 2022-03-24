@@ -1,0 +1,11 @@
+<div class="flex-wrapper">
+    <ng-container *ngIf="toDoList?.length; else emptyList"></ng-container>
+    <ng-container *ngFor="let toDo of toDoList">
+        <todoapp-todo-item [toDo]="toDo" (completeToDo)="onCompleteToDo(toDo)"></todoapp-todo-item>
+    </ng-container>
+</div>
+
+<ng-template #emptyList>
+    <p>Good job!</p>
+    <p>You have no pending stuff to do!</p>
+</ng-template>

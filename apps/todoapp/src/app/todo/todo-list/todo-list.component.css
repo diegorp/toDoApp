@@ -1,0 +1,16 @@
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+}
+
+todoapp-todo-item {
+    margin-bottom: 6px;
+}
+
+p {
+    font-size: 3.5em;
+    color: #dfdfdf;
+    text-align: center;
+    margin: 50px;
+}

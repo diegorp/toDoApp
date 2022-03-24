@@ -1,0 +1,6 @@
+<div class="wrapper">
+    <input type="text" [class.active]="toDo" [value]="toDo" (input)="updateToDo($event)">
+    <span class="bar"></span>
+    <label>Add new TODO</label>
+    <button (click)="addToDo()"></button>
+</div>

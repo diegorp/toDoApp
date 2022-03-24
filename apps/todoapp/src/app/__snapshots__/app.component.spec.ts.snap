@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent should create the app 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="flex-wrapper"
+  >
+    <todoapp-todo-list />
+    <todoapp-todo-builder />
+  </div>
+</div>
+`;

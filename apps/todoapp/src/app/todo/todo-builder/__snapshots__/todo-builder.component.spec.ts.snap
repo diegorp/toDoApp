@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoBuilderComponent should render the component 1`] = `
+<div
+  id="root3"
+>
+  <div
+    class="wrapper"
+  >
+    <input
+      type="text"
+    />
+    <span
+      class="bar"
+    />
+    <label>
+      Add new TODO
+    </label>
+    <button />
+  </div>
+</div>
+`;

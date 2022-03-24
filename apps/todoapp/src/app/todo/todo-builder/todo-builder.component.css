@@ -1,0 +1,81 @@
+:root {
+    --muted-color: mix(white, #424242, 70%);
+}
+
+.wrapper {
+    position: relative;
+}
+
+input {
+  background: none;
+  color: var(--muted-color);
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--muted-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus ~ label,
+input.active ~ label {
+    top: -14px;
+    font-size: 12px;
+    color: #2196F3;
+}
+
+input:focus ~ .bar:before {
+    width: 100%;
+}
+
+label {
+    color: #9f9f9f;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #2196F3;
+    transition: 300ms ease all;
+    left: 0%;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button:before {
+    content: '+';
+    height: 32px;
+    width: 32px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #2196F3;
+    color: #f2f2f2;
+    padding: 4px 8px;
+    font-size: 2em;
+    border-radius: 50%;
+}
